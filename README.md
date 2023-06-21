@@ -2,4 +2,4 @@ Git branch 確認テスト
 
 main branch now
 
-main branch dev_1 で記述
+`git checkout -b dev_1`で dev_1 を作成そして初 push する
