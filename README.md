@@ -12,7 +12,7 @@ main branch now
 
 次に dev＿2 を merge する
 
-**だが先に dev_1 が main に marge されているため、先に main ブランチを取り込んでから marge する必要がある**
+**だが先に dev_1 が main に marge されているため、先に dev_2にmain ブランチを取り込んでから marge する必要がある**
 
 ### 理由
 
@@ -42,48 +42,23 @@ main ブランチの最新の状態で自身の変更が機能することを確
 
 それでもコンフリクトが生じた場合は、必ず手動で解消してから marge すること！
 
-競合を起こさない事！プルリクが面倒になる
-
----
-
-今回はわざと最新の状態にせずにここで main にマージしてみる
-
-結果、作業ブランチを無理に最新にしてからマージするより楽な気がする
-
-よって個人個人でマージした方がいいかも。。？
-
-ちなみに main はマージされたら必ず pull して最新状態を保つこと
-
-やらなくていいのは、開発ブランチに main を merge するのはやらなくていいかも
-
----
-
-今私は dev_3 にいます。
-
----
-
-今私は dev_4 にいます。
-
-今私は dev_5 にいます。
-
-今私は dev_6 にいます。
-
-dev_6 でなんか書いています
-
-dev_7 にいますまだちょっと不安なので何度でもやってみる
+**競合を起こさない事！** プルリクが面倒になる
 
 ### 今回は別々でマージし開発ブランチで最新の main せずに merge してみます
 
 dev_8 でコメントしています
 
+dev_8をmainマージしmainを最新状態(dev_8を取り込んでる状態)にせずにそのままdev_9をマージしようとプルリクを出すと。。。
+
 やはりこうなる
+
 **Can’t automatically merge. Don’t worry, you can still create the pull request.**
 
-marge しようとしている dev_9 に main の状態を marge し更新してみる
+marge しようとしている dev_9 に main の最新状態(dev_8を取り込んでる状態)を marge し更新してみる
 
-dev_9 でコメントしています！
+`git merge main`: 必ずmainをマージしたい開発ブランチで行う
 
-dev_9 に main の状態を marge し更新した結果
+dev_9 に main の最新状態を marge し更新した結果
 
 ```
 git merge main
@@ -101,3 +76,5 @@ Automatic merge failed; fix conflicts and then commit the result.
 `git commit`でマージコミットを作成します。
 
 そうすると main の最新状態になる！
+
+そしてプルリクも出せるようになる！！
