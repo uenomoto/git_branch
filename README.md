@@ -89,6 +89,12 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 3. 作業が終わり、今回は先に matome ブランチを main とマージします！なのでここから matome ブランチに移動します
 
+matome. 今度は matome ブランチで作業しています
+
+matome. confirm ブランチより先に作業が終わったので main にマージします
+
+matome. 必ずマージしたら main ブランチでプルする事！！
+
 4. 今いるブランチの push 忘れずに！
 
 5. 今の状態のまま main にマージするとプルリクで`Can’t automatically merge.`となりできません
