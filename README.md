@@ -91,7 +91,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 3.  今いるブランチの push 忘れずに！
 
-4. 作業が終わり、今回は先に matome ブランチを main とマージします！なのでここから matome ブランチに移動します
+4. 作業途中ですがpushでsaveし、今回は先に matome ブランチを main とマージします！なのでここから matome ブランチに移動します
 
 matome. 今度は matome ブランチで作業しています
 
