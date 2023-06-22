@@ -79,8 +79,32 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 そしてプルリクも出せるようになる！！
 
+# confirm ブランチと matome ブランチで理解度を確認
+
+わざと別のブランチでまとめを書いて理解しているか確認します。
+
+1. 同じ main の状態から 2 つのブランチを切ります
+
+2. confirm ブランチで作業(今書いている)します
+
+3. 作業が終わり、今回は先に matome ブランチを main とマージします！なのでここから matome ブランチに移動します
+
 matome. 今度は matome ブランチで作業しています
 
 matome. confirm ブランチより先に作業が終わったので main にマージします
 
 matome. 必ずマージしたら main ブランチでプルする事！！
+
+4. 今いるブランチの push 忘れずに！
+
+5. 今の状態のまま main にマージするとプルリクで`Can’t automatically merge.`となりできません
+
+6. 最新の main の状態、すなわち matome ブランチを取り込んでる main をマージします！`git marge main`
+
+7. コンフリクトが出ると思うので手動で修正します。基本両方取り込む感じ
+
+8. 終わったらコンフリクト解消結果を`git add`でファイルをステージに上げ、`git commit`でマージコミットを作成します。
+
+9. そうすると main は matome ブランチを取り込んだ最新状態になるためプルリクが出せるようになります
+
+10. あとはいつも通りです。
