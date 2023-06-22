@@ -12,7 +12,7 @@ main branch now
 
 次に dev＿2 を merge する
 
-**だが先に dev_1 が main に marge されているため、先に dev_2にmain ブランチを取り込んでから marge する必要がある**
+**だが先に dev_1 が main に marge されているため、先に dev_2 に main ブランチを取り込んでから marge する必要がある**
 
 ### 理由
 
@@ -48,15 +48,15 @@ main ブランチの最新の状態で自身の変更が機能することを確
 
 dev_8 でコメントしています
 
-dev_8をmainマージしmainを最新状態(dev_8を取り込んでる状態)にせずにそのままdev_9をマージしようとプルリクを出すと。。。
+dev_8 を main マージし main を最新状態(dev_8 を取り込んでる状態)にせずにそのまま dev_9 をマージしようとプルリクを出すと。。。
 
 やはりこうなる
 
 **Can’t automatically merge. Don’t worry, you can still create the pull request.**
 
-marge しようとしている dev_9 に main の最新状態(dev_8を取り込んでる状態)を marge し更新してみる
+marge しようとしている dev_9 に main の最新状態(dev_8 を取り込んでる状態)を marge し更新してみる
 
-`git merge main`: 必ずmainをマージしたい開発ブランチで行う
+`git merge main`: 必ず main をマージしたい開発ブランチで行う
 
 dev_9 に main の最新状態を marge し更新した結果
 
@@ -78,3 +78,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 そうすると main の最新状態になる！
 
 そしてプルリクも出せるようになる！！
+
+5. 今度は matome ブランチで作業しています
+
+6. confirm ブランチより先に作業が終わったので main にマージします
