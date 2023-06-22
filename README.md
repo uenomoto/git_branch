@@ -79,6 +79,8 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 そしてプルリクも出せるようになる！！
 
-5. 今度は matome ブランチで作業しています
+matome. 今度は matome ブランチで作業しています
 
-6. confirm ブランチより先に作業が終わったので main にマージします
+matome. confirm ブランチより先に作業が終わったので main にマージします
+
+matome. 必ずマージしたら main ブランチでプルする事！！
