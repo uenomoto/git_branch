@@ -72,12 +72,6 @@ dev_6 でなんか書いています
 
 dev_7 にいますまだちょっと不安なので何度でもやってみる
 
-コンフリクトはおきます
-
-コンフリクトが解消したら`git add`コマンドで解決したファイルをステージに上げ、
-
-`git commit`でマージコミットを作成します。
-
 ### 今回は別々でマージし開発ブランチで最新の main せずに merge してみます
 
 dev_8 でコメントしています
@@ -86,3 +80,24 @@ dev_8 でコメントしています
 **Can’t automatically merge. Don’t worry, you can still create the pull request.**
 
 marge しようとしている dev_9 に main の状態を marge し更新してみる
+
+dev_9 でコメントしています！
+
+dev_9 に main の状態を marge し更新した結果
+
+```
+git merge main
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+自動マージに失敗手動でコンフリクト解消。今は少ないから簡単だけどコード量が多くなると・・・・
+
+それからコンフリクトが解消したら`git add`コマンドで解決したファイルをステージに上げ、
+
+`git commit`でマージコミットを作成します。
+
+そうすると main の最新状態になる！
