@@ -81,3 +81,8 @@ dev_7 にいますまだちょっと不安なので何度でもやってみる
 ### 今回は別々でマージし開発ブランチで最新の main せずに merge してみます
 
 dev_8 でコメントしています
+
+やはりこうなる
+**Can’t automatically merge. Don’t worry, you can still create the pull request.**
+
+marge しようとしている dev_9 に main の状態を marge し更新してみる
