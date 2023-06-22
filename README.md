@@ -87,8 +87,6 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 2. confirm ブランチで作業(今書いている)します
 
-3. 次から matome ブランチでまとめの続きを書きます
+3. 作業が終わり、今回は先に matome ブランチを main とマージします！なのでここから matome ブランチに移動します
 
-4. 今自分は matome ブランチで書いています。
-
-5. 作業が終わり、今回は先に matome ブランチを main とマージします！
+4. 今いるブランチの push 忘れずに！
